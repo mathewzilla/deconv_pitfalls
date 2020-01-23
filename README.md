@@ -12,4 +12,7 @@ then download the data:
 
 Put the data in a folder called /Data in the deconv_pitfalls directory.
 
-Change working directory in Matlab to deconv_pitfalls and run each figure script in turn 'Figure_1', 'Figure_2' etc. Figures will be saved in a directory called Fig_panels.
+Change working directory in Matlab to deconv_pitfalls and run `RUN_ME.m`. 
+
+Alternatively, run each figure script in turn 'Figure_1', 'Figure_2' etc in turn. Figures will be saved in a directory called Fig_panels.
+
