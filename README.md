@@ -1,10 +1,14 @@
 # deconv_pitfalls
-Code to generate figures presented in "On the use of calcium deconvolution algorithms in practical contexts"
+Code to generate figures presented in *On the use of calcium deconvolution algorithms in practical contexts*
 by Mathew H. Evans, Rasmus S. Petersen and Mark D. Humphries. 
 
-Preprint: https://www.biorxiv.org/content/10.1101/871137v1
+Preprint: `https://www.biorxiv.org/content/10.1101/871137v1`
 
-To run the code, download/clone this repository, then download the data:
+To run the code, download/clone this repository:
+
+`git clone https://github.com/mathewzilla/deconv_pitfalls.git`
+
+then download the data:
 
 Put the data in a folder called /Data in the deconv_pitfalls directory.
 
