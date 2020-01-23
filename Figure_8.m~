@@ -1,0 +1,30 @@
+% Figure_8.m - Pairwise correlation distributions, stability of
+% correlations, differences in relative correlation structure across
+% methods
+%
+% Code to produce figure 7 of the 'Pitfalls of deconvolution' paper 2020 
+% biorxiv: https://www.biorxiv.org/content/10.1101/871137v1
+%
+% M. Evans January 2020
+
+%% Set figure parameters
+clear all
+run figure_properties_deconv.m
+
+% Load session/task data
+load Data/an197522_2013_03_07.mat
+
+%% file names and other housekeeping
+data_ID = {'ca';'ev';'Y_e';'S2P_k6';'ML_e2';'LZ_k';'S2P_t6';'ML_t';'LZ_t2'};
+
+meth_names_paper = {'Calcium';'Peron';'Yaksi';'Suite2P_{kernel}';'MLSpike_{kernel}';'LZero_{kernel}';'Suite2P_{events}';'MLSpike_{events}';'LZero_{events}'};
+methods = {'ca';'ev';'Y';'S2P_k6';'ML_e2';'LZ_k';'S2P_t6';'ML_t';'LZ_t2' };
+[ncells,nt] = size(dat.timeSeriesArrayHash.value{1,2}.valueMatrix);
+
+x = dat.timeSeriesArrayHash.value{1,2}.trial;
+trials = unique(x);
+
+meths = 1:9; 
+nmeths = numel(meths);
+meth_c = 1:6; % Continuous methods.
+meth_s = 7:9; % Spike inference methods. 
