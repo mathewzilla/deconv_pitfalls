@@ -8,7 +8,12 @@ To run the code, download/clone this repository:
 
 `git clone https://github.com/mathewzilla/deconv_pitfalls.git`
 
-then download the data:
+then download the data (on figshare due to size):
+`https://doi.org/10.6084/m9.figshare.11695479`
+
+N.B. the above data underly the figures. The original data can be found here:
+`http://crcns.org/data-sets/ssc/ssc-2`
+
 
 Put the data in a folder called /Data in the deconv_pitfalls directory.
 
